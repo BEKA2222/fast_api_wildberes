@@ -4,7 +4,7 @@ services:
 
   fast_web:
     build: .
-    command: uvicorn main:hotel_app 0.0.0.0 --port 8000
+    command: uvicorn main:hotel_app --host 0.0.0.0 --port 8000
     volumes:
       - .:/app
       - static_volume:/app/static
